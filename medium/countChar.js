@@ -6,5 +6,19 @@ const secondPrompt = readline.question('Character to count: '); // eg. o
 
 // Your code here...
 
-console.log('The sentence contains this many instances of ' + '...', ':' + '...');
+let char = []
+function countChar(firstPrompt, secondPrompt) {
+    for(let i = 0; i < firstPrompt.lengt; i++ ){
+        if(firstPrompt[i] === secondPrompt){
+            char.push(i)
+        };
+    }
+    
+}
+
+countChar(firstPrompt, char.length)
+
+
+
+console.log('The sentence contains this many instances of ' + firstPrompt, ':' + secondPrompt);
 
